@@ -1,0 +1,27 @@
+---
+title: "Untitled"
+author: "Caroline"
+date: '2022-05-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## INTRODUÇÃO
+
+O vinho é considerado como a bebida da longevidade, quem toma dois copos de vinho todos os dias garante o melhor funcionamento do coração e assim, maior expectativa de vida.\
+O presente trabalho tem como objetivo ajustar e analisar um banco de dados que apresenta as variáveis que compoem o vinho por litro. Os vinhos que foram análisados foram o tinto seco e meio-seco. Dentre as pricipais variáveis estão o álcool, ao qual damos maior destaque nesse estudo.
+
+```{r, include = FALSE}
+library(tidyverse)
+```
+
+## BANCO DE DADOS
+
+```{r}
+BDVinho <- read_csv("E:/Estatística/Ciência de Dados/Atividade Vinho/GitHub/Vamos Tomar um Vinho/BDVinho.csv")
+BDVinho
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
